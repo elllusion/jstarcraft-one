@@ -2,7 +2,8 @@ package test;
 
 import java.awt.Graphics2D;
 
-import core.GameCore;
+import jstarcraft.core.GameCore;
+
 
 @SuppressWarnings("serial")
 public class MyTestGameCore extends GameCore {
