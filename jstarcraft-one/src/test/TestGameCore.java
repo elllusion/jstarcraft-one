@@ -1,12 +1,13 @@
 package test;
 
-import gui.GameGUI;
 
 import java.awt.Graphics2D;
 import java.net.InetAddress;
 
-import core.FullGameCore;
-import core.ResourceManager.Constant;
+import jstarcraft.core.FullGameCore;
+import jstarcraft.core.ResourceManager.Constant;
+import jstarcraft.gui.GameGUI;
+
 
 /**
  * @author jiangyp
