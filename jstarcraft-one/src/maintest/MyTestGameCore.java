@@ -1,4 +1,4 @@
-package test;
+package maintest;
 
 import java.awt.Graphics2D;
 
