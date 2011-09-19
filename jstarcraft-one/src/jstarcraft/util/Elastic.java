@@ -25,17 +25,17 @@ public class Elastic {
 		this.change = change;
 		t = 0;
 	}
-	
+
 	public int update(long elapsedTime) {
 
 		this.totalElapsedTime += elapsedTime;
-		if (this.totalElapsedTime + elapsedTime > 25&&t<100) {
+		if (this.totalElapsedTime + elapsedTime > 25 && t < 100) {
 			++t;
 			this.totalElapsedTime = 0;
 		}
 		return (int) Math.round(easeOut(t, init, change, 100, 0, 0));
 	}
-	
+
 	private double easeOut(float t, float b, float c, float d, float a, float p) {
 		double s;
 		if (t == 0)
@@ -47,7 +47,8 @@ public class Elastic {
 		if (a == 0 || a < Math.abs(c)) {
 			a = c;
 			s = p / 4;
-		} else {
+		}
+		else {
 			s = p / (2 * Math.PI) * Math.asin(c / a);
 		}
 		return (a * Math.pow(2, -10 * t)
