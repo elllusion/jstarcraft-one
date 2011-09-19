@@ -5,7 +5,6 @@ import java.util.LinkedList;
 public class MyTest {
 
 	private static LinkedList<Integer> itemlist = new LinkedList<Integer>(){
-		
 		public boolean add(Integer e) {
 			
 			for(int i=0;i<size();++i){
