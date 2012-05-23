@@ -12,8 +12,11 @@ import javax.swing.JPanel;
 import jstarcraft.core.ResourceManager;
 
 
-public class Abstractpanel extends JPanel {
- 
+public class AbstractPanel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1329625019867494174L;
 	protected static final Color borderColor = new Color(255,0,0,100);	
 	protected static final Color fillColor = new Color(0,0,0,70);
 	protected static final Color textColor = new Color(76,196,40);
@@ -22,7 +25,7 @@ public class Abstractpanel extends JPanel {
 	protected Image main = ResourceManager.loadImage("background3.jpg");
 	protected GameGUI gameGUI;
 	
-	public Abstractpanel(GameGUI gameGUI, String name) {
+	public AbstractPanel(GameGUI gameGUI, String name) {
 		setLayout(null);
 		setSize(gameGUI.getWidth(), gameGUI.getHeight());
 		gameGUI.add(this, name);
@@ -43,7 +46,4 @@ public class Abstractpanel extends JPanel {
 	public void update(long elapsedTime) {
 
 	}
-	
-}	
-
-
+}
